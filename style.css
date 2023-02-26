@@ -50,7 +50,7 @@ body{
     background-color: #000000;
 
     opacity: 0;
-    transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in-out;
 }
 #menu-logo{
     width: 305px;
@@ -67,7 +67,7 @@ body{
     align-items: center;
 }
 form *{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Jost', sans-serif;
     color: #ffffff;
     letter-spacing: 0.5px;
     outline: none;
@@ -109,16 +109,41 @@ label[for="language"], label[for="location"]{
     font-weight: bolder;
     cursor: pointer;
 }
+
+#menu-logo{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+label[for="language"]{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+#language{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+label[for="location"]{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+#location{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+#menu-submit{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
 /*MENU BLOCK END*/
 /*MAIN CONTENT BLOCK*/
 #main-content{
     opacity: 0;
-    transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in-out;
 }
 #preferences-btn-container{
     background-color: #ffffff;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,8 +151,9 @@ label[for="language"], label[for="location"]{
 #preferences-btn{
     display: block;
     height: 33px;
-    width: 305px;
-    background-color: #ef8b8b;
+    width: 315px;
+    background-color: #8c9cac;
+    font-family: 'Jost', sans-serif;
     color: #000000;
     text-align: center;
     border-radius: 6px;
@@ -147,10 +173,93 @@ label[for="language"], label[for="location"]{
 #main-logo{
     width: 315px;
 }
-#im1{
-    width: 50%;
-    display: block;
+
+
+
+
+#container1{
+    background-color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 0px;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 315px;
     margin: 0 auto;
+    font-family: 'Jost', sans-serif;
+}
+
+#container1 h2{
+    text-align: center;
+    margin-bottom: 15px;
+    color: #454545;
+}
+
+#container1 img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#container1 p{
+    text-align: justify;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #454545;
+    letter-spacing: 0.1px;
+}
+
+#container1 ul{
+    text-align: justify;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #454545;
+    letter-spacing: 0.1px;
+}
+
+#container1 ul li{
+    margin-left: 20px;
+    letter-spacing: 0.1px;
+}
+
+
+
+
+/*
+#container1 img{
+    width: 80%px;
+    /*float: left;*/
+    /*shape-outside: url(images/im1_s-removebg-preview.png);*/
+    /*margin-right: 10px;*/
+    /*shape-margin: 15px;*/
+    /*border-radius: 60px 150px 10px 10px;*/
+/*}*/
+/*
+#container1 h2{
+    font-family: 'Jost', sans-serif;
+    color: black;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+    margin-bottom: 30px;
+}
+#container1 p{
+    font-family: 'Jost', sans-serif;
+    color: #454545;
+    font-size: 1rem;
+    letter-spacing: 0.1px;
+    outline: none;
+    border: none;
+    text-align: justify;
+}
+#container1 ul{
+    font-family: 'Jost', sans-serif;
+    color: #454545;
+    font-size: 1rem;
+    letter-spacing: 0.1px;
+    outline: none;
+    border: none;
+    text-align: justify;
 }
 /*MAIN CONTENT BLOCK END*/
 /*PHONE VERSION  (DEFAULT STYLE) END*/
@@ -162,5 +271,49 @@ label[for="language"], label[for="location"]{
         width: 60%;
     }
     /*MENU BLOCK END*/
+    /*MAIN CONTENT BLOCK*/
+/*
+    #container1{
+    background-color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+#container1 img{
+    width: 200px;
+    float: left;
+    shape-outside: url(images/im1_s-removebg-preview.png);
+    margin-right: 10px;
+    shape-margin: 15px;
+    border-radius: 60px 150px 10px 10px;
+}
+#container1 h2{
+    font-family: 'Jost', sans-serif;
+    color: black;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+    margin-bottom: 30px;
+}
+#container1 p{
+    font-family: 'Jost', sans-serif;
+    color: #454545;
+    font-size: 0.8rem;
+    letter-spacing: 0.1px;
+    outline: none;
+    border: none;
+    text-align: justify;
+}
+*/
+
 }
 /*COMPUTER VERSION (ONLY CHANGES REQUIRED FOR BIGGER SCREEN) END*/
+
+
+
+
+
+/*
+#ffffff, #000000, #454545, #8c9cac, #ec8c8c, #957f7e, #9c7ea0
+*/
