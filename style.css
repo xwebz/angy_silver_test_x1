@@ -32,7 +32,7 @@ body{
 /*MENU BLOCK*/
 #menu{
     height: 460px;
-    width: 90%;
+    width: 96%;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
