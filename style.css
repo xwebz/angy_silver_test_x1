@@ -29,41 +29,43 @@ body{
 }
 /*BODY END*/
 
+/*PHONE VERSION (DEFAULT STYLE)*/
 /*MENU BLOCK*/
 #menu{
-    height: 460px;
     width: 98%;
+    height: 460px;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     border-radius: 10px;
-    padding: 0px;
-    background-color: #000000;
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
     padding-top: 30px;
     padding-bottom: 30px;
-}
+    background-color: #000000;
 
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
 #menu-logo{
     width: 305px;
     position: relative;
     z-index: 10;
 }
-
 #menu-form{
     width: 100%;
-    border-radius: 10px;
     padding: 50px 35px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-
 form *{
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
@@ -72,7 +74,6 @@ form *{
     border: none;
     border: 1px solid black;
 }
-
 label[for="language"], label[for="location"]{
     display: block;
     padding-bottom: 9px;
@@ -80,11 +81,10 @@ label[for="language"], label[for="location"]{
     font-weight: 500;
     text-align: center;
 }
-
 #language, #location{
     display: block;
     height: 33px;
-    width: 90%;
+    width: 305px;
     background-color: #444444;
     color: #ffffff;
     text-align: center;
@@ -92,16 +92,14 @@ label[for="language"], label[for="location"]{
     font-size: 14px;
     font-weight: 300;
 }
-
 #language option, #location option{
     background-color: #444444;
     color: #ffffff;
 }
-
-#menu-submit-1{
+#menu-submit{
     display: block;
     height: 33px;
-    width: 90%;
+    width: 305px;
     margin-top: 15px;
     background-color: #ef8b8b;
     color: #000000;
@@ -112,3 +110,57 @@ label[for="language"], label[for="location"]{
     cursor: pointer;
 }
 /*MENU BLOCK END*/
+/*MAIN CONTENT BLOCK*/
+#main-content{
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+#preferences-btn-container{
+    background-color: #ffffff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#preferences-btn{
+    display: block;
+    height: 33px;
+    width: 305px;
+    background-color: #ef8b8b;
+    color: #000000;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bolder;
+    cursor: pointer;
+    border: none;
+}
+#logo-container{
+    background-color: #454545;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#main-logo{
+    width: 315px;
+}
+#im1{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+/*MAIN CONTENT BLOCK END*/
+/*PHONE VERSION  (DEFAULT STYLE) END*/
+
+/*COMPUTER VERSION (ONLY CHANGES REQUIRED FOR BIGGER SCREEN)*/
+@media (min-width: 601px){
+    /*MENU BLOCK*/
+    #menu{
+        width: 60%;
+    }
+    /*MENU BLOCK END*/
+}
+/*COMPUTER VERSION (ONLY CHANGES REQUIRED FOR BIGGER SCREEN) END*/
