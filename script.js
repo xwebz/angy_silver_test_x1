@@ -15,6 +15,7 @@ const locationSelect = document.getElementById('location');
 const menuButton     = document.getElementById('menu-submit');
 
 // MAIN CONTENT ELEMENTS: [CHANGE PREFERENCES BUTTON - CONTAINER WITH LOGO - ETC..................]
+const changeButtonContainer = document.getElementById('preferences-btn-container');
 const changeButton = document.getElementById('preferences-btn');
 const logoBox      = document.getElementById('logo-container');
 const container0   = document.getElementById('container0');
@@ -56,6 +57,10 @@ window.onload = function() {
     }, 7000);
     // MAIN CONTENT ELEMENTS HIDE
     mainContent.remove();
+    setTimeout(() => {
+        changeButtonContainer.style.visibility = 'hidden';
+        changeButtonContainer.style.opacity    = 0;
+    }, 0);
     setTimeout(() => {
         changeButton.style.visibility = 'hidden';
         changeButton.style.opacity    = 0;
@@ -124,6 +129,10 @@ menuButton.addEventListener('click', function(event){
     // MAIN CONTENT ELEMENTS SHOW UP
     body.appendChild(mainContent);
     setTimeout(() => {
+        changeButtonContainer.style.visibility = 'visible';
+        changeButtonContainer.style.opacity    = 1;
+    }, 1500);
+    setTimeout(() => {
         changeButton.style.visibility = 'visible';
         changeButton.style.opacity    = 1;
     }, 1500);
@@ -185,6 +194,10 @@ changeButton.addEventListener('click', function(event){
     }, 7000);
     // MAIN CONTENT ELEMENTS HIDE
     mainContent.remove();
+    setTimeout(() => {
+        changeButtonContainer.style.visibility = 'hidden';
+        changeButtonContainer.style.opacity    = 0;
+    }, 0);
     setTimeout(() => {
         changeButton.style.visibility = 'hidden';
         changeButton.style.opacity    = 0;
