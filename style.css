@@ -101,11 +101,12 @@ label[for="language"], label[for="location"]{
     width: 305px;
     margin-top: 24px;
     background-color: #ef8b8b;
-    color: #000000;
+    color: #ffffff;
+    /*letter-spacing: 2px;*/
     text-align: center;
     border-radius: 6px;
-    font-size: 14px;
-    font-weight: bolder;
+    font-size: 16px;
+    font-weight: 500;
     cursor: pointer;
 }
 
@@ -141,7 +142,7 @@ label[for="location"]{
 }
 
 #preferences-btn-container{
-    background-color: #ffffff;
+    background-color: #454545;
     padding-top: 30px;
     padding-bottom: 30px;
     display: flex;
@@ -152,18 +153,18 @@ label[for="location"]{
     display: block;
     height: 33px;
     width: 315px;
-    background-color: #8c9cac;
+    background-color: #272727;
     font-family: 'Jost', sans-serif;
-    color: #000000;
+    color: #ffffff;
     text-align: center;
     border-radius: 6px;
-    font-size: 14px;
-    font-weight: bolder;
+    font-size: 16px;
+    font-weight: 500;
     cursor: pointer;
     border: none;
 }
 #logo-container{
-    background-color: #454545;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -176,32 +177,187 @@ label[for="location"]{
 
 
 
+
+
+#container0top{
+    height: 9px;
+    width: 315px;
+    margin-top: 30px;
+    margin-bottom: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #9c7ea0;
+}
 /*Container 0*/
 #container0{
     /*background-color: #ef8b8b;*/
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 0px;
-    padding-left: 0px;
-    display: flex;
-    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
     width: 315px;
     margin: 0 auto;
     font-family: 'Jost', sans-serif;
+    background-color: #9c7ea0;
+    border-radius: 0px 0px 6px 6px;
 }
 #container0 h2{
     text-align: center;
-    margin-bottom: 15px;
-    color: #454545;
+    margin-bottom: 1rem;
+    color: #ffffff;
 }
 #container0 p{
-    text-align: justify;
+    text-align: center;
     font-size: 1rem;
-    color: #454545;
+    color: #ffffff;
     letter-spacing: 0.1px;
 }
 /*Container 0 End*/
+
+
+
+#containerx1top{
+    height: 9px;
+    width: 315px;
+    margin-top: 30px;
+    margin-bottom: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #454545;
+}
+#containerx1{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 315px;
+    margin: 0 auto;
+    font-family: 'Jost', sans-serif;
+    background-color: #454545;
+    border-radius: 0px 0px 6px 6px;
+}
+#containerx1 p{
+    text-align: center;
+    font-size: 1rem;
+    color: #ffffff;
+    letter-spacing: 0.1px;
+}
+
+/*
+#containerx2top{
+    height: 9px;
+    width: 315px;
+    margin-top: 30px;
+    margin-bottom: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #8c9cac;
+}
+*/
+#containerx2{
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-right: 0rem;
+    padding-left: 0rem;
+    width: 315px;
+    margin: 0 auto;
+    font-family: 'Jost', sans-serif;
+    background-color: #9c7ea0;
+    margin-top: 30px;
+    border-radius: 6px;
+}
+#containerx2 img{
+    width: 315px;
+    display: block;
+    border-radius: 6px 150px 6px 150px;
+}
+/*
+#containerx2bottom{
+    height: 9px;
+    width: 315px;
+    margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #8c9cac;
+}
+*/
+
+
+
+
+/*
+*{
+    border: 1px solid black;
+}
+*/
+
+
+
+
+
+#containerx3top{
+    height: 9px;
+    width: 315px;
+    margin-top: 30px;
+    margin-bottom: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #454545;
+}
+#containerx3{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 315px;
+    margin: 0 auto;
+    font-family: 'Jost', sans-serif;
+    background-color: #454545;
+    border-radius: 0px 0px 6px 6px;
+}
+#containerx3 h2{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+#containerx3 p{
+    text-align: center;
+    font-size: 1rem;
+    color: #ffffff;
+    letter-spacing: 0.1px;
+    border-radius: 6px;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+#containerx3 p.odd{
+    text-align: center;
+    font-size: 1rem;
+    color: #454545;
+    background-color: #ffffff;
+    letter-spacing: 0.1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Container 1*/
+/*
 #container1{
     background-color: #ffffff;
     padding-top: 30px;
@@ -247,8 +403,8 @@ label[for="location"]{
 }
 /*Container 1 End*/
 /*Container 2*/
+/*
 #container2{
-    /*background-color: #ef8b8b;*/
     padding-top: 30px;
     padding-bottom: 30px;
     padding-right: 0px;
@@ -283,7 +439,10 @@ label[for="location"]{
 /*Container 2 End*/
 /*Container 3*/
 #container3{
-    width: 98%;
+    width: 315px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 10px;
     align-items: center;
     display: flex;
@@ -294,7 +453,6 @@ label[for="location"]{
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: #000000;
-    margin: 0 auto;
 }
 #container3 h2{
     font-family: 'Jost', sans-serif;
@@ -307,7 +465,7 @@ label[for="location"]{
     color: #8c9cac;
     text-align: center;
     margin-bottom: 15px;
-    width: 305px;
+    width: 90%;
     padding-top: 5px;
     padding-bottom: 5px;
     font-weight: 400;
@@ -320,7 +478,7 @@ label[for="location"]{
     background-color: #000000;
     padding-top: 5px;
     padding-bottom: 5px;
-    width: 305px;
+    width: 90%;
 }
 #border1{
     border-top: 2px solid #8c9cac;
@@ -335,7 +493,7 @@ label[for="location"]{
     border-radius: 0px 0px 24px 24px;
 }
 #registration-form{
-    width: 100%;
+    width: 90%;
     padding: 15px 35px;
     border-radius: 10px;
     display: flex;
@@ -361,7 +519,7 @@ label[for="name"], label[for="email"], label[for="phone"], label[for="location2"
 #name, #email, #phone{
     display: block;
     height: 33px;
-    width: 305px;
+    width: 90%;
     background-color: #8c9cac;
     color: #ffffff;
     text-align: center;
@@ -372,7 +530,7 @@ label[for="name"], label[for="email"], label[for="phone"], label[for="location2"
 #registration-submit{
     display: block;
     height: 33px;
-    width: 305px;
+    width: 90%;
     margin-top: 24px;
     background-color: #ef8b8b;
     color: #000000;
@@ -383,7 +541,10 @@ label[for="name"], label[for="email"], label[for="phone"], label[for="location2"
     cursor: pointer;
 }
 
-
+#preferences-btn-container{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
 #preferences-btn{
     opacity: 0;
     transition: opacity 1s ease-in-out;
@@ -421,6 +582,29 @@ label[for="name"], label[for="email"], label[for="phone"], label[for="location2"
     }
     /*MENU BLOCK END*/
     /*MAIN CONTENT BLOCK*/
+    *{
+        border: 1px solid chartreuse;
+    }
+    /*
+    #container0{
+        width: 600px;
+        border: 1px solid chartreuse;
+    }
+    #container1{
+        width: 600px;
+        border: 1px solid chartreuse;
+        display: contents;
+    }
+    #container1 img{
+        width: 50%;
+        float: right;
+        margin: 0px;
+    }
+    */
+
+
+
+
     #container3{
         width: 60%;
     }
