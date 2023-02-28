@@ -16,20 +16,20 @@ const menuButton     = document.getElementById('menu-submit');
 
 // MAIN CONTENT ELEMENTS: [CHANGE PREFERENCES BUTTON - CONTAINER WITH LOGO - ETC..................]
 const changeButtonContainer = document.getElementById('preferences-btn-container');
-const changeButton  = document.getElementById('preferences-btn');
-const logoBox       = document.getElementById('logo-container');
-const container0Top = document.getElementById('containerx0top');
-const container1Top = document.getElementById('containerx1top');
-const container3Top = document.getElementById('containerx3top');
-const container5Top = document.getElementById('containerx5top');
-const container0    = document.getElementById('containerx0');
-const container1    = document.getElementById('containerx1');
-const container2    = document.getElementById('containerx2');
-const container3    = document.getElementById('containerx3');
-const container4    = document.getElementById('containerx4');
-const container5    = document.getElementById('containerx5');
-const container6    = document.getElementById('containerx6');
-const container7    = document.getElementById('containerx7');
+const changeButton          = document.getElementById('preferences-btn');
+const logoBox               = document.getElementById('logo-container');
+const container0Top         = document.getElementById('containerx0top');
+const container1Top         = document.getElementById('containerx1top');
+const container3Top         = document.getElementById('containerx3top');
+const container5Top         = document.getElementById('containerx5top');
+const container0            = document.getElementById('containerx0');
+const container1            = document.getElementById('containerx1');
+const container2            = document.getElementById('containerx2');
+const container3            = document.getElementById('containerx3');
+const container4            = document.getElementById('containerx4');
+const container5            = document.getElementById('containerx5');
+const container6            = document.getElementById('containerx6');
+const container7            = document.getElementById('containerx7');
 
 // INITIAL VISIBILITY AND OPACITY
 window.onload = function() {
