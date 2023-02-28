@@ -178,7 +178,7 @@ label[for="location"]{
     height: 9px;
     width: 98%;
     margin-top: 30px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
     margin-left: auto;
     margin-right: auto;
     background-color: #9c7ea0;
@@ -210,7 +210,7 @@ label[for="location"]{
     height: 9px;
     width: 98%;
     margin-top: 30px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
     margin-left: auto;
     margin-right: auto;
     background-color: #454545;
@@ -255,7 +255,7 @@ label[for="location"]{
     height: 9px;
     width: 98%;
     margin-top: 30px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
     margin-left: auto;
     margin-right: auto;
     background-color: #9c7ea0;
@@ -317,7 +317,7 @@ label[for="location"]{
     height: 9px;
     width: 98%;
     margin-top: 30px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
     margin-left: auto;
     margin-right: auto;
     background-color: #454545;
@@ -388,6 +388,7 @@ label[for="location"]{
 #containerx7{
     width: 98%;
     margin-top: 30px;
+    margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
@@ -547,12 +548,90 @@ label[for="name"], label[for="email"], label[for="phone"], label[for="location2"
 /*MAIN CONTENT BLOCK END*/
 /*PHONE VERSION  (DEFAULT STYLE) END*/
 
-/*COMPUTER VERSION (ONLY CHANGES REQUIRED FOR BIGGER SCREEN)*/
-@media (min-width: 501px){
-    /*MAIN CONTENT BLOCK*/
 
-    /*MAIN CONTENT BLOCK END*/
+
+
+
+#preferences-btn-container{
+    grid-area: preferences-btn-container;
 }
+#logo-container{
+    grid-area: logo-container;
+}
+#containerx0top{
+    grid-area: containerx0top;
+}
+#containerx1top{
+    grid-area: containerx1top;
+}
+#containerx3top{
+    grid-area: containerx3top;
+}
+#containerx5top{
+    grid-area: containerx5top;
+}
+#containerx0{
+    grid-area: containerx0;
+}
+#containerx1{
+    grid-area: containerx1;
+}
+#containerx2{
+    grid-area: containerx2;
+}
+#containerx3{
+    grid-area: containerx3;
+}
+#containerx4{
+    grid-area: containerx4;
+}
+#containerx5{
+    grid-area: containerx5;
+}
+#containerx6{
+    grid-area: containerx6;
+}
+#containerx7{
+    grid-area: containerx7;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*COMPUTER VERSION (ONLY CHANGES REQUIRED FOR BIGGER SCREEN)*/
+/*
+@media (min-width: 550px){
+    #main-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "preferences-btn-container preferences-btn-container"
+        "logo-container logo-container"
+        "containerx2 containerx0top"
+        "containerx2 containerx0"
+        "containerx2 containerx1top"
+        "containerx2 containerx1"
+        "containerx5top containerx4"
+        "containerx5 containerx4"
+        "containerx3top containerx6"
+        "containerx3 containerx6"
+        "containerx7 containerx7";
+    }
+}
+*/
+
+
+
+
+
+
 
 
 
