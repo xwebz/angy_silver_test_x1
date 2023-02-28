@@ -174,25 +174,32 @@ label[for="location"]{
     width: 315px;
 }
 /*-----------------------------------------------*/
+/*
 #containerx0top{
     height: 9px;
-    width: 98%;
+    width: 100%;
     margin-top: 30px;
     margin-bottom: 0.3rem;
     margin-left: auto;
     margin-right: auto;
     background-color: #9c7ea0;
 }
+*/
 #containerx0{
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-right: 1rem;
     padding-left: 1rem;
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
     font-family: 'Jost', sans-serif;
     background-color: #9c7ea0;
-    border-radius: 0px 0px 6px 6px;
+    border-radius: 0px 0px 0px 0px;
+}
+.white-line{
+    height: 9px;
+    margin-bottom: 1rem;
+    background-color: #ffffff;
 }
 #containerx0 h2{
     text-align: center;
@@ -206,6 +213,7 @@ label[for="location"]{
     letter-spacing: 0.1px;
 }
 /*-----------------------------------------------*/
+/*
 #containerx1top{
     height: 9px;
     width: 98%;
@@ -214,17 +222,17 @@ label[for="location"]{
     margin-left: auto;
     margin-right: auto;
     background-color: #454545;
-}
+*/
 #containerx1{
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-right: 1rem;
     padding-left: 1rem;
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
     font-family: 'Jost', sans-serif;
     background-color: #454545;
-    border-radius: 0px 0px 6px 6px;
+    border-radius: 0px 0px 0px 0px;
 }
 #containerx1 p{
     text-align: center;
@@ -238,19 +246,21 @@ label[for="location"]{
     padding-bottom: 0rem;
     padding-right: 0rem;
     padding-left: 0rem;
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
     font-family: 'Jost', sans-serif;
-    background-color: #9c7ea0;
-    margin-top: 30px;
-    border-radius: 6px;
+    /*background-color: #9c7ea0;*/
+    background: linear-gradient(to bottom, #454545, #9c7ea0);
+    /*margin-top: 30px;*/
+    border-radius: 0px;
 }
 #containerx2 img{
     width: 100%;
     display: block;
-    border-radius: 6px 120px 6px 6px;
+    border-radius: 0px 120px 0px 120px;
 }
 /*-----------------------------------------------*/
+/*
 #containerx3top{
     height: 9px;
     width: 98%;
@@ -260,16 +270,17 @@ label[for="location"]{
     margin-right: auto;
     background-color: #9c7ea0;
 }
+*/
 #containerx3{
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-right: 1rem;
     padding-left: 1rem;
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
     font-family: 'Jost', sans-serif;
     background-color: #9c7ea0;
-    border-radius: 0px 0px 6px 6px;
+    border-radius: 0px 0px 0px 0px;
 }
 #containerx3 h2{
     text-align: center;
@@ -300,19 +311,20 @@ label[for="location"]{
     padding-bottom: 0rem;
     padding-right: 0rem;
     padding-left: 0rem;
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
     font-family: 'Jost', sans-serif;
-    background-color: #454545;
-    margin-top: 30px;
-    border-radius: 6px;
+    background: linear-gradient(to bottom, #9c7ea0, #454545);
+    /*margin-top: 30px;*/
+    border-radius: 0px;
 }
 #containerx4 img{
     width: 100%;
     display: block;
-    border-radius: 120px 6px 6px 6px;
+    border-radius: 120px 0px 0px 0px;
 }
 /*-----------------------------------------------*/
+/*
 #containerx5top{
     height: 9px;
     width: 98%;
@@ -322,16 +334,17 @@ label[for="location"]{
     margin-right: auto;
     background-color: #454545;
 }
+*/
 #containerx5{
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-right: 1rem;
     padding-left: 1rem;
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
     font-family: 'Jost', sans-serif;
     background-color: #454545;
-    border-radius: 0px 0px 6px 6px;
+    border-radius: 0px 0px 0px 0px;
 }
 #containerx5 h2{
     text-align: center;
@@ -362,17 +375,17 @@ label[for="location"]{
     padding-bottom: 0rem;
     padding-right: 0rem;
     padding-left: 0rem;
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
     font-family: 'Jost', sans-serif;
     background-color: #8c9cac;
-    margin-top: 30px;
-    border-radius: 6px;
+    /*margin-top: 30px;*/
+    border-radius: 0px;
 }
 #containerx6 img{
     width: 100%;
     display: block;
-    border-radius: 120px 24px 120px 6px;
+    border-radius: 120px 0px 120px 0px;
 }
 #containerx6 p{
     text-align: center;
@@ -386,12 +399,12 @@ label[for="location"]{
 }
 /*-----------------------------------------------*/
 #containerx7{
-    width: 98%;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    width: 100%;
+    /*margin-top: 30px;*/
+    /*margin-bottom: 30px;*/
     margin-left: auto;
     margin-right: auto;
-    border-radius: 10px;
+    border-radius: 0px;
     align-items: center;
     display: flex;
     flex-direction: column;
