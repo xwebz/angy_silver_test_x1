@@ -18,10 +18,6 @@ const menuButton     = document.getElementById('menu-submit');
 const changeButtonContainer = document.getElementById('preferences-btn-container');
 const changeButton          = document.getElementById('preferences-btn');
 const logoBox               = document.getElementById('logo-container');
-const container0Top         = document.getElementById('containerx0top');
-const container1Top         = document.getElementById('containerx1top');
-const container3Top         = document.getElementById('containerx3top');
-const container5Top         = document.getElementById('containerx5top');
 const container0            = document.getElementById('containerx0');
 const container1            = document.getElementById('containerx1');
 const container2            = document.getElementById('containerx2');
@@ -78,16 +74,8 @@ window.onload = function() {
         logoBox.style.opacity    = 0;
     }, 0);
     setTimeout(() => {
-        container0Top.style.visibility = 'hidden';
-        container0Top.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
         container0.style.visibility = 'hidden';
         container0.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
-        container1Top.style.visibility = 'hidden';
-        container1Top.style.opacity    = 0;
     }, 0);
     setTimeout(() => {
         container1.style.visibility = 'hidden';
@@ -98,20 +86,12 @@ window.onload = function() {
         container2.style.opacity    = 0;
     }, 0);
     setTimeout(() => {
-        container3Top.style.visibility = 'hidden';
-        container3Top.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
         container3.style.visibility = 'hidden';
         container3.style.opacity    = 0;
     }, 0);
     setTimeout(() => {
         container4.style.visibility = 'hidden';
         container4.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
-        container5Top.style.visibility = 'hidden';
-        container5Top.style.opacity    = 0;
     }, 0);
     setTimeout(() => {
         container5.style.visibility = 'hidden';
@@ -181,17 +161,9 @@ menuButton.addEventListener('click', function(event){
         logoBox.style.opacity    = 1;
     }, 2000);
     setTimeout(() => {
-        container0Top.style.visibility = 'visible';
-        container0Top.style.opacity    = 1;
-    }, 3000);
-    setTimeout(() => {
         container0.style.visibility = 'visible';
         container0.style.opacity    = 1;
     }, 3000);
-    setTimeout(() => {
-        container1Top.style.visibility = 'visible';
-        container1Top.style.opacity    = 1;
-    }, 4000);
     setTimeout(() => {
         container1.style.visibility = 'visible';
         container1.style.opacity    = 1;
@@ -201,10 +173,6 @@ menuButton.addEventListener('click', function(event){
         container2.style.opacity    = 1;
     }, 5000);
     setTimeout(() => {
-        container3Top.style.visibility = 'visible';
-        container3Top.style.opacity    = 1;
-    }, 6000);
-    setTimeout(() => {
         container3.style.visibility = 'visible';
         container3.style.opacity    = 1;
     }, 6000);
@@ -212,10 +180,6 @@ menuButton.addEventListener('click', function(event){
         container4.style.visibility = 'visible';
         container4.style.opacity    = 1;
     }, 7000);
-    setTimeout(() => {
-        container5Top.style.visibility = 'visible';
-        container5Top.style.opacity    = 1;
-    }, 8000);
     setTimeout(() => {
         container5.style.visibility = 'visible';
         container5.style.opacity    = 1;
@@ -279,16 +243,8 @@ changeButton.addEventListener('click', function(event){
         logoBox.style.opacity    = 0;
     }, 0);
     setTimeout(() => {
-        container0Top.style.visibility = 'hidden';
-        container0Top.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
         container0.style.visibility = 'hidden';
         container0.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
-        container1Top.style.visibility = 'hidden';
-        container1Top.style.opacity    = 0;
     }, 0);
     setTimeout(() => {
         container1.style.visibility = 'hidden';
@@ -299,20 +255,12 @@ changeButton.addEventListener('click', function(event){
         container2.style.opacity    = 0;
     }, 0);
     setTimeout(() => {
-        container3Top.style.visibility = 'hidden';
-        container3Top.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
         container3.style.visibility = 'hidden';
         container3.style.opacity    = 0;
     }, 0);
     setTimeout(() => {
         container4.style.visibility = 'hidden';
         container4.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
-        container5Top.style.visibility = 'hidden';
-        container5Top.style.opacity    = 0;
     }, 0);
     setTimeout(() => {
         container5.style.visibility = 'hidden';
