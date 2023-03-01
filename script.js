@@ -8,9 +8,15 @@ const mainContentFrench  = document.getElementById('main-content-french');
 const mainContentSpanish = document.getElementById('main-content-spanish');
 
 // MENU ELEMENTS
+const labelLanguage  = document.querySelector('label[for="language"]');
 const languageSelect = document.getElementById('language');
+
+const labelLocation  = document.querySelector('label[for="location"]');
 const locationSelect = document.getElementById('location');
+
 const menuButton     = document.getElementById('menu-submit');
+
+
 
 // INITIAL LOAD (ONLY SHOW MENU)
 window.onload = function() {
@@ -20,6 +26,26 @@ window.onload = function() {
     mainContentSpanish.remove();
     body.appendChild(menu);
 }
+
+// LANGUAGE CHANGE MENU DINAMICALLY
+languageSelect.addEventListener('change', function(){
+    const chosenLanguage = languageSelect.value;
+    if (chosenLanguage === 'english'){
+        labelLanguage.textContent = "Language";
+        labelLocation.textContent = "Location";
+        menuButton.value          = "Open Invitation";
+    }
+    if (chosenLanguage === 'french'){
+        labelLanguage.textContent = "Langue:";
+        labelLocation.textContent = "Emplacement de l'événement:";
+        menuButton.value          = "Accéder à l'invitation";
+    }
+    if (chosenLanguage === 'spanish'){
+        labelLanguage.textContent = "Idioma:";
+        labelLocation.textContent = "Ubicación del Evento:";
+        menuButton.value          = "Abrir Invitación";
+    }
+});
 
 // LANGUAGE / LOCATION - DEPENDENT CONTENT
 menuButton.addEventListener('click', function(event){
