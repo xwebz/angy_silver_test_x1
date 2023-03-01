@@ -40,15 +40,16 @@
             <label for="language">Language:</label>
             <select name="language" id="language">
                 <option value="english">English</option>
-                <option value="spanish">Spanish</option>
+                <option value="french">Français</option>
+                <option value="spanish">Español</option>
             </select>
             <br>
             <label for="location">Event Location:</label>
             <select name="location" id="location">
-                <option value="toronto">Toronto</option>
-                <option value="calgary">Calgary</option>
-                <option value="montreal">Montreal</option>
-                <option value="orangeville">Orangeville</option>
+                <option value="Toronto">Toronto</option>
+                <option value="Calgary">Calgary</option>
+                <option value="Montreal">Montreal</option>
+                <option value="Orangeville">Orangeville</option>
             </select>
             <br>
             <input id="menu-submit" type="submit" value="Open Invitation">
@@ -56,11 +57,11 @@
     </div>
     <!--MENU BLOCK END-->
 
-    <!--MAIN CONTENT BLOCK-->
-    <div id="main-content">
+    <!--MAIN CONTENT ENGLISH BLOCK-->
+    <div id="main-content-english">
         <!--Change Language / Location-->
         <div id="preferences-btn-container">
-            <button id="preferences-btn">Change Language / Location</button>
+            <button id="preferences-btn">Change Language / Event Location</button>
         </div>
         <!--Main Logo-->
         <div id="logo-container">
@@ -69,15 +70,15 @@
         <!--Container <0> Welcome-->
         <!--<div id="containerx0top"></div>-->
         <div id="containerx0">
-            <h2>Welcome to Our<br>Presentation Event!</h2>
-            <p>
+            <h2 id="text1"></h2>
+            <p  id="text2">
                 We're a Taxco, Guerrero, Mexico-based company producing top-quality Mexican jewelry for you.
             </p>
         </div>
         <!--Container <1> Incentive-->
         <!--<div id="containerx1top"></div>-->
         <div id="containerx1">
-            <p>Join our "Toronto" presentation and discover the advantages of working with us.</p>
+            <p id="text3">Join our Event and discover the advantages of working with us.</p>
         </div>
         <!--Container <2> Image 1-->
         <div id="containerx2">
@@ -86,14 +87,14 @@
         <!--Container <3> Benefits-->
         <!--<div id="containerx3top"></div>-->
         <div id="containerx3">
-            <h2>Key Benefits of Partnering with Us:</h2>
-            <p class="odd">A selection of over 40,000 unique jewelry models to choose from.</p>
-            <p>Uncompromising commitment to quality and personalized service.</p>
-            <p class="odd">Guaranteed investment security.</p>
-            <p>Quality assurance provided for every order placed with us.</p>
-            <p class="odd">24/7 access to a vast array of new jewelry models.</p>
-            <p>Expedited delivery times of 24 to 48 hours.</p>
-            <p class="odd">Profit margins exceeding 150% to maximize your returns.</p>
+            <h2            id="text4">Key Benefits of Partnering with Us:</h2>
+            <p class="odd" id="text5">A selection of over 40,000 unique jewelry models to choose from.</p>
+            <p             id="text6">Uncompromising commitment to quality and personalized service.</p>
+            <p class="odd" id="text7">Guaranteed investment security.</p>
+            <p             id="text8">Quality assurance provided for every order placed with us.</p>
+            <p class="odd" id="text9">24/7 access to a vast array of new jewelry models.</p>
+            <p             id="text10">Expedited delivery times of 24 to 48 hours.</p>
+            <p class="odd" id="text11">Profit margins exceeding 150% to maximize your returns.</p>
         </div>
         <!--Container <4> Image 2-->
         <div id="containerx4">
@@ -102,28 +103,22 @@
         <!--Container <5> Some Services-->
         <!--<div id="containerx5top"></div>-->
         <div id="containerx5">
-            <h2>Some of Our Services:</h2>
-            <p class="odd">Tailored production of your product lines with exclusivity.</p>
-            <p>Custom creation of molds and dies to match your unique designs.</p>
-            <p class="odd">Uninterrupted availability of items 24/7/365 to ensure maximum operational efficiency.</p>
+            <h2            id="text12">Some of Our Services:</h2>
+            <p class="odd" id="text13">Tailored production of your product lines with exclusivity.</p>
+            <p             id="text14">Custom creation of molds and dies to match your unique designs.</p>
+            <p class="odd" id="text15">Uninterrupted availability of items 24/7/365 to ensure maximum operational efficiency.</p>
         </div>
         <!--Container <6> Image 3-->
         <div id="containerx6">
-            <h2>You Will Receive:</h2>
-            <p>Personal attention from Angélica Arteaga, Commercial Director of the Company.</p>
+            <h2 id="text16">You Will Receive:</h2>
+            <p  id="text17">Personal attention from Angélica Arteaga, Commercial Director of the Company.</p>
             <img src="images/im3_s.jpeg" alt="">
         </div>
         <!--Container <7> RSVP-->
         <div id="containerx7">
-            <h2>Join us in Toronto</h2>
-            <p class="date" id="border1">
-                April 23rd, 2023.
-                <br>
-                09:30 AM
-            </p>
-            <p class="date" id="border2">
-                1000 Lawrence Ave W, North York, ON M6A 1C6, Canadá
-            </p>
+            <h2             id="text18">Join us</h2>
+            <p class="date border1" id="text19">April 23rd, 2023<br>09:30 AM</p>
+            <p class="date border2" id="text20">1000 Lawrence Ave W, North York, ON M6A 1C6, Canadá</p>
             <form action="" id="registration-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name">
@@ -131,7 +126,7 @@
                 <label for="name">Email:</label>
                 <input type="email" id="email">
                 <br>
-                <label for="phone">Phone:</label>
+                <label for="phone">Phone Number:</label>
                 <input type="text" id="phone">
                 <br>
                 <input id="registration-submit" type="submit" value="Join Event">
@@ -141,7 +136,169 @@
 
         </div>
     </div>
-    <!--MAIN CONTENT BLOCK END-->
+    <!--MAIN CONTENT ENGLISH BLOCK END-->
+
+    <!--MAIN CONTENT FRENCH BLOCK-->
+    <div id="main-content-french">
+        <!--Change Language / Location-->
+        <div id="preferences-btn-container">
+            <button id="preferences-btn">Modifier la Langue / la Localisation</button>
+        </div>
+        <!--Main Logo-->
+        <div id="logo-container">
+            <img id="main-logo" src="images/logo_black_font.png">
+        </div>
+        <!--Container <0> Welcome-->
+        <!--<div id="containerx0top"></div>-->
+        <div id="containerx0">
+            <h2 id="text1"></h2>
+            <p  id="text2">
+                Nous sommes une entreprise basée à Taxco, Guerrero, Mexique, spécialisée dans la production de bijoux mexicains de haute qualité pour votre satisfaction.
+            </p>
+        </div>
+        <!--Container <1> Incentive-->
+        <!--<div id="containerx1top"></div>-->
+        <div id="containerx1">
+            <p id="text3">Rejoignez notre événement et découvrez les avantages de travailler avec nous.</p>
+        </div>
+        <!--Container <2> Image 1-->
+        <div id="containerx2">
+            <img src="images/im1_s.jpeg" alt="">
+        </div>
+        <!--Container <3> Benefits-->
+        <!--<div id="containerx3top"></div>-->
+        <div id="containerx3">
+            <h2            id="text4">Les Avantages Clés de Collaborer Avec Nous:</h2>
+            <p class="odd" id="text5">Une sélection de plus de 40,000 modèles de bijoux uniques parmi lesquels choisir.</p>
+            <p             id="text6">Un engagement sans compromis envers la qualité et le service personnalisé.</p>
+            <p class="odd" id="text7">Une garantie de sécurité d'investissement.</p>
+            <p             id="text8">Une assurance qualité fournie pour chaque commande passée auprès de nous.</p>
+            <p class="odd" id="text9">Accès 24 heures sur 24, 7 jours sur 7, à une vaste gamme de nouveaux modèles de bijoux.</p>
+            <p             id="text10">Des délais de livraison accélérés de 24 à 48 heures.</p>
+            <p class="odd" id="text11">Des marges bénéficiaires dépassant 150% pour maximiser vos rendements.</p>
+        </div>
+        <!--Container <4> Image 2-->
+        <div id="containerx4">
+            <img src="images/im2_s.jpeg" alt="">
+        </div>
+        <!--Container <5> Some Services-->
+        <!--<div id="containerx5top"></div>-->
+        <div id="containerx5">
+            <h2            id="text12">Quelques-uns de nos services:</h2>
+            <p class="odd" id="text13">Production sur mesure de vos gammes de produits en exclusivité.</p>
+            <p             id="text14">Création personnalisée de moules et matrices pour correspondre à vos designs uniques.</p>
+            <p class="odd" id="text15">Disponibilité ininterrompue des articles 24h/24, 7j/7, 365 jours par an pour assurer une efficacité opérationnelle maximale.</p>
+        </div>
+        <!--Container <6> Image 3-->
+        <div id="containerx6">
+            <h2 id="text16">Vous recevrez:</h2>
+            <p  id="text17">Une attention personnelle d'Angélica Arteaga, Directrice Commerciale de l'entreprise.</p>
+            <img src="images/im3_s.jpeg" alt="">
+        </div>
+        <!--Container <7> RSVP-->
+        <div id="containerx7">
+            <h2             id="text18">Rejoignez-nous</h2>
+            <p class="date border1" id="text19">Samedi, 23 avril 2023<br>09h30</p>
+            <p class="date border2" id="text20">1000 Lawrence Ave W, North York, ON M6A 1C6, Canadá</p>
+            <form action="" id="registration-form">
+                <label for="name">Nom:</label>
+                <input type="text" id="name">
+                <br>
+                <label for="name">Email:</label>
+                <input type="email" id="email">
+                <br>
+                <label for="phone">Numéro de téléphone:</label>
+                <input type="text" id="phone">
+                <br>
+                <input id="registration-submit" type="submit" value="Participer à l'événement">
+            </form>
+        </div>
+        <div id="container4">
+
+        </div>
+    </div>
+    <!--MAIN CONTENT FRENCH BLOCK END-->
+
+    <!--MAIN CONTENT SPANISH BLOCK-->
+    <div id="main-content-spanish">
+        <!--Change Language / Location-->
+        <div id="preferences-btn-container">
+            <button id="preferences-btn">Cambiar Idioma / Ciudad del Evento</button>
+        </div>
+        <!--Main Logo-->
+        <div id="logo-container">
+            <img id="main-logo" src="images/logo_black_font.png">
+        </div>
+        <!--Container <0> Welcome-->
+        <!--<div id="containerx0top"></div>-->
+        <div id="containerx0">
+            <h2 id="text1"></h2>
+            <p  id="text2">
+                Somos una empresa con sede en Taxco, Guerrero, México, dedicada a la producción de joyería mexicana de alta calidad para usted.
+            </p>
+        </div>
+        <!--Container <1> Incentive-->
+        <!--<div id="containerx1top"></div>-->
+        <div id="containerx1">
+            <p id="text3">Únete a nuestro evento y descubre las ventajas de trabajar con nosotros.</p>
+        </div>
+        <!--Container <2> Image 1-->
+        <div id="containerx2">
+            <img src="images/im1_s.jpeg" alt="">
+        </div>
+        <!--Container <3> Benefits-->
+        <!--<div id="containerx3top"></div>-->
+        <div id="containerx3">
+            <h2            id="text4">Beneficios clave de asociarse con nosotros:</h2>
+            <p class="odd" id="text5">Una selección de más de 40,000 modelos de joyas únicas para elegir.</p>
+            <p             id="text6">Un compromiso inquebrantable con la calidad y el servicio personalizado.</p>
+            <p class="odd" id="text7">Garantía de seguridad de inversión.</p>
+            <p             id="text8">Garantía de calidad proporcionada para cada pedido realizado con nosotros.</p>
+            <p class="odd" id="text9">Acceso las 24 horas del día, los 7 días de la semana, a una amplia variedad de nuevos modelos de joyería.</p>
+            <p             id="text10">Tiempos de entrega acelerados de 24 a 48 horas.</p>
+            <p class="odd" id="text11">Márgenes de beneficio superiores al 150% para maximizar sus ganancias.</p>
+        </div>
+        <!--Container <4> Image 2-->
+        <div id="containerx4">
+            <img src="images/im2_s.jpeg" alt="">
+        </div>
+        <!--Container <5> Some Services-->
+        <!--<div id="containerx5top"></div>-->
+        <div id="containerx5">
+            <h2            id="text12">Algunos de nuestros servicios:</h2>
+            <p class="odd" id="text13">Producción a medida de sus líneas de productos con exclusividad.</p>
+            <p             id="text14">Creación personalizada de moldes y troqueles para coincidir con sus diseños únicos.</p>
+            <p class="odd" id="text15">Disponibilidad ininterrumpida de artículos 24/7/365 para garantizar una eficiencia operativa máxima.</p>
+        </div>
+        <!--Container <6> Image 3-->
+        <div id="containerx6">
+            <h2 id="text16">Recibirá:</h2>
+            <p  id="text17">Atención personalizada de Angélica Arteaga, Directora Comercial de la empresa.</p>
+            <img src="images/im3_s.jpeg" alt="">
+        </div>
+        <!--Container <7> RSVP-->
+        <div id="containerx7">
+            <h2             id="text18">Acompáñanos</h2>
+            <p class="date border1" id="text19">Sábado, 23 de abril de 2023<br>9:30 AM</p>
+            <p class="date border2" id="text20">1000 Lawrence Ave W, North York, ON M6A 1C6, Canadá</p>
+            <form action="" id="registration-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name">
+                <br>
+                <label for="name">Correo electrónico:</label>
+                <input type="email" id="email">
+                <br>
+                <label for="phone">Núméro de teléfono:</label>
+                <input type="text" id="phone">
+                <br>
+                <input id="registration-submit" type="submit" value="Confirmar Asistencia">
+            </form>
+        </div>
+        <div id="container4">
+
+        </div>
+    </div>
+    <!--MAIN CONTENT SPANISH BLOCK END-->
 
     <!--JAVASCRIPT FILE-->
     <script src="script.js"></script>
