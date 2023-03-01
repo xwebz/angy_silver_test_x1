@@ -36,13 +36,13 @@ menuButton.addEventListener('click', function(event){
         txt1.textContent = `Welcome to Our ${location} Event`;
         const changeButton = document.getElementById('preferences-btn');
         changeButton.addEventListener('click', function(event){
-        event.preventDefault();
-        menu.remove();
-        mainContentEnglish.remove();
-        mainContentFrench.remove();
-        mainContentSpanish.remove();
-        body.appendChild(menu);
-});
+            event.preventDefault();
+            menu.remove();
+            mainContentEnglish.remove();
+            mainContentFrench.remove();
+            mainContentSpanish.remove();
+            body.appendChild(menu);
+        });
     }
     if (language === 'french'){
         mainContentEnglish.remove();
@@ -52,13 +52,13 @@ menuButton.addEventListener('click', function(event){
         txt1.textContent = `Bienvenue à notre événement de présentation à ${location}`;
         const changeButton = document.getElementById('preferences-btn');
         changeButton.addEventListener('click', function(event){
-        event.preventDefault();
-        menu.remove();
-        mainContentEnglish.remove();
-        mainContentFrench.remove();
-        mainContentSpanish.remove();
-        body.appendChild(menu);
-});
+            event.preventDefault();
+            menu.remove();
+            mainContentEnglish.remove();
+            mainContentFrench.remove();
+            mainContentSpanish.remove();
+            body.appendChild(menu);
+        });
     }
     if (language === 'spanish'){
         mainContentEnglish.remove();
@@ -68,13 +68,13 @@ menuButton.addEventListener('click', function(event){
         txt1.textContent = `Bienvenido(a) a Nuestro Evento de Presentación en ${location}`;
         const changeButton = document.getElementById('preferences-btn');
         changeButton.addEventListener('click', function(event){
-        event.preventDefault();
-        menu.remove();
-        mainContentEnglish.remove();
-        mainContentFrench.remove();
-        mainContentSpanish.remove();
-        body.appendChild(menu);
-});
+            event.preventDefault();
+            menu.remove();
+            mainContentEnglish.remove();
+            mainContentFrench.remove();
+            mainContentSpanish.remove();
+            body.appendChild(menu);
+        });
     }
     // Date and time depending on Language and Event Location
     const txt19 = document.getElementById('text19');
