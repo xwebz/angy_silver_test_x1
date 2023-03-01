@@ -47,7 +47,8 @@ body{
     padding-right: 0px;
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: #000000;
+    background-color: #ffffff;
+    /*border: 2px solid #ef8b8b;*/
     
     /*opacity: 0;*/
     /*transition: opacity 1s ease-in-out;*/
@@ -68,7 +69,7 @@ body{
 }
 form *{
     font-family: 'Jost', sans-serif;
-    color: #ffffff;
+    color: #454545;
     letter-spacing: 0.5px;
     outline: none;
     border: none;
@@ -573,18 +574,6 @@ label[for="name"], label[for="email"], label[for="phone"], label[for="location2"
 /*PHONE VERSION  (DEFAULT STYLE) END*/
 
 
-
-
-
-
-
-
-.hide{
-    display: none;
-}
-.show{
-    display: block;
-}
 
 
 
