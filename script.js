@@ -1,278 +1,120 @@
 // PAGE BODY
 const body = document.body;
 
-// THE 2 BLOCKS OF THE WEBSITE: [MENU - MAIN CONTENT]
-const menu        = document.getElementById('menu');
-const mainContent = document.getElementById('main-content');
+// THE 2 BLOCKS OF THE WEBSITE: [MENU - MAIN CONTENT (3 LANGUAGES)]
+const menu = document.getElementById('menu');
+const mainContentEnglish = document.getElementById('main-content-english');
+const mainContentFrench  = document.getElementById('main-content-french');
+const mainContentSpanish = document.getElementById('main-content-spanish');
 
-// MENU ELEMENTS: [LOGO - FORM - FORM ELEMENTS]
-const menuLogo       = document.getElementById('menu-logo');
-const menuForm       = document.getElementById('menu-form');
-const labelLanguage  = document.querySelector('label[for="language"]');
+// MENU ELEMENTS
 const languageSelect = document.getElementById('language');
-const labelLocation  = document.querySelector('label[for="location"]');
 const locationSelect = document.getElementById('location');
 const menuButton     = document.getElementById('menu-submit');
 
-// MAIN CONTENT ELEMENTS: [CHANGE PREFERENCES BUTTON - CONTAINER WITH LOGO - ETC..................]
-const changeButtonContainer = document.getElementById('preferences-btn-container');
-const changeButton          = document.getElementById('preferences-btn');
-const logoBox               = document.getElementById('logo-container');
-const container0            = document.getElementById('containerx0');
-const container1            = document.getElementById('containerx1');
-const container2            = document.getElementById('containerx2');
-const container3            = document.getElementById('containerx3');
-const container4            = document.getElementById('containerx4');
-const container5            = document.getElementById('containerx5');
-const container6            = document.getElementById('containerx6');
-const container7            = document.getElementById('containerx7');
-
-// INITIAL VISIBILITY AND OPACITY
+// INITIAL LOAD (ONLY SHOW MENU)
 window.onload = function() {
-    // 2 BLOCKS VISIBILITY
-    menu.style.visibility        = 'visible';
-    menu.style.opacity           = 1;
-    mainContent.style.visibility = 'hidden';
-    mainContent.style.opacity    = 0;
-    // MENU ELEMENTS SHOW UP
-    setTimeout(() => {
-        menuLogo.style.visibility = 'visible';
-        menuLogo.style.opacity    = 1;
-    }, 2000);
-    setTimeout(() => {
-        labelLanguage.style.visibility  = 'visible';
-        labelLanguage.style.opacity     = 1;
-    }, 3000);
-    setTimeout(() => {
-        languageSelect.style.visibility = 'visible';
-        languageSelect.style.opacity    = 1;
-    }, 4000);
-    setTimeout(() => {
-        labelLocation.style.visibility = 'visible';
-        labelLocation.style.opacity    = 1;
-    }, 5000);
-    setTimeout(() => {
-        locationSelect.style.visibility = 'visible';
-        locationSelect.style.opacity    = 1;
-    }, 6000);
-    setTimeout(() => {
-        menuButton.style.visibility = 'visible';
-        menuButton.style.opacity = 1;
-    }, 7000);
-    // MAIN CONTENT ELEMENTS HIDE
-    mainContent.remove();
-    setTimeout(() => {
-        changeButtonContainer.style.visibility = 'hidden';
-        changeButtonContainer.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
-        changeButton.style.visibility = 'hidden';
-        changeButton.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
-        logoBox.style.visibility = 'hidden';
-        logoBox.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
-        container0.style.visibility = 'hidden';
-        container0.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
-        container1.style.visibility = 'hidden';
-        container1.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
-        container2.style.visibility = 'hidden';
-        container2.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
-        container3.style.visibility = 'hidden';
-        container3.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
-        container4.style.visibility = 'hidden';
-        container4.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
-        container5.style.visibility = 'hidden';
-        container5.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
-        container6.style.visibility = 'hidden';
-        container6.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
-        container7.style.visibility = 'hidden';
-        container7.style.opacity    = 0;
-    }, 0);
+    menu.remove();
+    mainContentEnglish.remove();
+    mainContentFrench.remove();
+    mainContentSpanish.remove();
+    body.appendChild(menu);
 }
 
-
-
-
-
-
-// VISIBILITY AND OPACITY AFTER "OPEN INVITATION" IS CLICKED
+// LANGUAGE / LOCATION - DEPENDENT CONTENT
 menuButton.addEventListener('click', function(event){
     event.preventDefault();
-    // 2 BLOCKS VISIBILITY
-    menu.style.visibility        = 'hidden';
-    menu.style.opacity           = 0;
-    mainContent.style.visibility = 'visible';
-    mainContent.style.opacity    = 1;
-    // MENU ELEMENTS HIDE
+    // On Menu Submit, Hide Menu and Show Invitation
     menu.remove();
-    setTimeout(() => {
-        menuLogo.style.visibility = 'hidden';
-        menuLogo.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
-        labelLanguage.style.visibility  = 'hidden';
-        labelLanguage.style.opacity     = 0;
-    }, 0);
-    setTimeout(() => {
-        languageSelect.style.visibility = 'hidden';
-        languageSelect.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
-        labelLocation.style.visibility = 'hidden';
-        labelLocation.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
-        locationSelect.style.visibility = 'hidden';
-        locationSelect.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
-        menuButton.style.visibility = 'hidden';
-        menuButton.style.opacity = 0;
-    }, 0);
-    // MAIN CONTENT ELEMENTS SHOW UP
-    body.appendChild(mainContent);
-    setTimeout(() => {
-        changeButtonContainer.style.visibility = 'visible';
-        changeButtonContainer.style.opacity    = 1;
-    }, 1500);
-    setTimeout(() => {
-        changeButton.style.visibility = 'visible';
-        changeButton.style.opacity    = 1;
-    }, 1500);
-    setTimeout(() => {
-        logoBox.style.visibility = 'visible';
-        logoBox.style.opacity    = 1;
-    }, 2000);
-    setTimeout(() => {
-        container0.style.visibility = 'visible';
-        container0.style.opacity    = 1;
-    }, 3000);
-    setTimeout(() => {
-        container1.style.visibility = 'visible';
-        container1.style.opacity    = 1;
-    }, 4000);
-    setTimeout(() => {
-        container2.style.visibility = 'visible';
-        container2.style.opacity    = 1;
-    }, 5000);
-    setTimeout(() => {
-        container3.style.visibility = 'visible';
-        container3.style.opacity    = 1;
-    }, 6000);
-    setTimeout(() => {
-        container4.style.visibility = 'visible';
-        container4.style.opacity    = 1;
-    }, 7000);
-    setTimeout(() => {
-        container5.style.visibility = 'visible';
-        container5.style.opacity    = 1;
-    }, 8000);
-    setTimeout(() => {
-        container6.style.visibility = 'visible';
-        container6.style.opacity    = 1;
-    }, 9000);
-    setTimeout(() => {
-        container7.style.visibility = 'visible';
-        container7.style.opacity    = 1;
-    }, 10000);
-})
-
-// VISIBILITY AND OPACITY AFTER "CHANGE LANGUAGE / LOCATION" IS CLICKED
-changeButton.addEventListener('click', function(event){
-    event.preventDefault();
-    // 2 BLOCKS VISIBILITY
-    menu.style.visibility        = 'visible';
-    menu.style.opacity           = 1;
-    mainContent.style.visibility = 'hidden';
-    mainContent.style.opacity    = 0;
-    // MENU ELEMENTS SHOW UP
-    body.appendChild(menu);
-    setTimeout(() => {
-        menuLogo.style.visibility = 'visible';
-        menuLogo.style.opacity    = 1;
-    }, 2000);
-    setTimeout(() => {
-        labelLanguage.style.visibility  = 'visible';
-        labelLanguage.style.opacity     = 1;
-    }, 3000);
-    setTimeout(() => {
-        languageSelect.style.visibility = 'visible';
-        languageSelect.style.opacity    = 1;
-    }, 4000);
-    setTimeout(() => {
-        labelLocation.style.visibility = 'visible';
-        labelLocation.style.opacity    = 1;
-    }, 5000);
-    setTimeout(() => {
-        locationSelect.style.visibility = 'visible';
-        locationSelect.style.opacity    = 1;
-    }, 6000);
-    setTimeout(() => {
-        menuButton.style.visibility = 'visible';
-        menuButton.style.opacity = 1;
-    }, 7000);
-    // MAIN CONTENT ELEMENTS HIDE
-    mainContent.remove();
-    setTimeout(() => {
-        changeButtonContainer.style.visibility = 'hidden';
-        changeButtonContainer.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
-        changeButton.style.visibility = 'hidden';
-        changeButton.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
-        logoBox.style.visibility = 'hidden';
-        logoBox.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
-        container0.style.visibility = 'hidden';
-        container0.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
-        container1.style.visibility = 'hidden';
-        container1.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
-        container2.style.visibility = 'hidden';
-        container2.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
-        container3.style.visibility = 'hidden';
-        container3.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
-        container4.style.visibility = 'hidden';
-        container4.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
-        container5.style.visibility = 'hidden';
-        container5.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
-        container6.style.visibility = 'hidden';
-        container6.style.opacity    = 0;
-    }, 0);
-    setTimeout(() => {
-        container7.style.visibility = 'hidden';
-        container7.style.opacity    = 0;
-    }, 0);
-})
-
+    const language = languageSelect.value;
+    const location = locationSelect.value;
+    if (language === 'english'){
+        mainContentFrench.remove();
+        mainContentSpanish.remove();
+        body.appendChild(mainContentEnglish);
+        const txt1       = document.getElementById('text1');
+        txt1.textContent = `Welcome to Our ${location} Event`;
+    }
+    if (language === 'french'){
+        mainContentEnglish.remove();
+        mainContentSpanish.remove();
+        body.appendChild(mainContentFrench);
+        const txt1       = document.getElementById('text1');
+        txt1.textContent = `Bienvenue à notre événement de présentation à ${location}`;
+    }
+    if (language === 'spanish'){
+        mainContentEnglish.remove();
+        mainContentFrench.remove();
+        body.appendChild(mainContentSpanish);
+        const txt1       = document.getElementById('text1');
+        txt1.textContent = `Bienvenido(a) a Nuestro Evento de Presentación en ${location}`;
+    }
+    // Date and time depending on Language and Event Location
+    const txt19 = document.getElementById('text19');
+    var TimeTorontoEnglish = "<span>" + "April 23rd, 2023" + "<br>" + "09:30 AM" + "</span>" ;
+    var TimeTorontoFrench  = "<span>" + "Samedi, 23 avril 2023" + "<br>" + "09h30" + "</span>";
+    var TimeTorontoSpanish = "<span>" + "Sábado, 23 de abril de 2023" + "<br>" + "9:30 AM" + "</span>";
+    if (language === 'english' && location === 'Toronto'){
+        txt19.innerHTML = TimeTorontoEnglish;
+    }
+    if (language === 'french' && location === 'Toronto'){
+        txt19.innerHTML = TimeTorontoFrench;
+    }
+    if (language === 'spanish' && location === 'Toronto'){
+        txt19.innerHTML = TimeTorontoSpanish;
+    }
+    var TimeCalgaryEnglish = "<span>" + "April 24th, 2023" + "<br>" + "09:30 AM" + "</span>" ;
+    var TimeCalgaryFrench  = "<span>" + "Samedi, 24 avril 2023" + "<br>" + "09h30" + "</span>";
+    var TimeCalgarySpanish = "<span>" + "Sábado, 24 de abril de 2023" + "<br>" + "9:30 AM" + "</span>";
+    if (language === 'english' && location === 'Calgary'){
+        txt19.innerHTML = TimeCalgaryEnglish;
+    }
+    if (language === 'french' && location === 'Calgary'){
+        txt19.innerHTML = TimeCalgaryFrench;
+    }
+    if (language === 'spanish' && location === 'Calgary'){
+        txt19.innerHTML = TimeCalgarySpanish;
+    }
+    var TimeMontrealEnglish = "<span>" + "April 25th, 2023" + "<br>" + "09:30 AM" + "</span>" ;
+    var TimeMontrealFrench  = "<span>" + "Samedi, 25 avril 2023" + "<br>" + "09h30" + "</span>";
+    var TimeMontrealSpanish = "<span>" + "Sábado, 25 de abril de 2023" + "<br>" + "9:30 AM" + "</span>";
+    if (language === 'english' && location === 'Montreal'){
+        txt19.innerHTML = TimeMontrealEnglish;
+    }
+    if (language === 'french' && location === 'Montreal'){
+        txt19.innerHTML = TimeMontrealFrench;
+    }
+    if (language === 'spanish' && location === 'Montreal'){
+        txt19.innerHTML = TimeMontrealSpanish;
+    }
+    var TimeOrangevilleEnglish = "<span>" + "April 26th, 2023" + "<br>" + "09:30 AM" + "</span>" ;
+    var TimeOrangevilleFrench  = "<span>" + "Samedi, 26 avril 2023" + "<br>" + "09h30" + "</span>";
+    var TimeOrangevilleSpanish = "<span>" + "Sábado, 26 de abril de 2023" + "<br>" + "9:30 AM" + "</span>";
+    if (language === 'english' && location === 'Orangeville'){
+        txt19.innerHTML = TimeOrangevilleEnglish;
+    }
+    if (language === 'french' && location === 'Orangeville'){
+        txt19.innerHTML = TimeOrangevilleFrench;
+    }
+    if (language === 'spanish' && location === 'Orangeville'){
+        txt19.innerHTML = TimeOrangevilleSpanish;
+    }
+    // Show Event Location depending on which city the User Selected
+    var addressToronto     = "1000 Lawrence Ave W, North York, ON M6A 1C6, Canadá";
+    var addressCalgary     = "555 Saddledome Rise SE, Calgary, AB T2G 2W1, Canadá";
+    var addressMontreal    = "2500 Chem. de Polytechnique, Montréal, QC H3T 1J4, Canadá";
+    var addressOrangeville = "25 Mill St, Orangeville, ON L9W 2M2, Canadá";
+    const txt20 = document.getElementById('text20');
+    if (location === 'Toronto'){
+        txt20.textContent = addressToronto;
+    }
+    if (location === 'Calgary'){
+        txt20.textContent = addressCalgary;
+    }
+    if (location === "Montreal"){
+        txt20.textContent = addressMontreal;
+    }
+    if (location === "Orangeville"){
+        txt20.textContent = addressOrangeville;
+    }
+});
