@@ -49,8 +49,8 @@ body{
     padding-bottom: 30px;
     background-color: #000000;
     
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+    /*opacity: 0;*/
+    /*transition: opacity 1s ease-in-out;*/
 }
 #menu-logo{
     width: 305px;
@@ -109,7 +109,7 @@ label[for="language"], label[for="location"]{
     font-weight: 500;
     cursor: pointer;
 }
-
+/*
 #menu-logo{
     opacity: 0;
     transition: opacity 1s ease-in-out;
@@ -134,6 +134,7 @@ label[for="location"]{
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
+*/
 /*MENU BLOCK END*/
 /*MAIN CONTENT BLOCK*/
 #main-content{
@@ -314,14 +315,14 @@ label[for="location"]{
     width: 100%;
     margin: 0 auto;
     font-family: 'Jost', sans-serif;
-    background: linear-gradient(to bottom, #9c7ea0, #454545);
+    background: linear-gradient(to bottom, #9c7ea0 50%, #454545 50%);
     /*margin-top: 30px;*/
     border-radius: 0px;
 }
 #containerx4 img{
     width: 100%;
     display: block;
-    border-radius: 120px 0px 0px 0px;
+    border-radius: 120px 0px 120px 0px;
 }
 /*-----------------------------------------------*/
 /*
@@ -403,7 +404,7 @@ label[for="location"]{
 #containerx6 img{
     width: 100%;
     display: block;
-    border-radius: 120px 0px 120px 0px;
+    border-radius: 0px 120px 0px 120px;
     /*opacity: 0.1;*/
 }
 /*-----------------------------------------------*/
@@ -445,14 +446,14 @@ label[for="location"]{
     padding-left: 1rem;
     padding-right: 1rem;
 }
-#border1{
+.border1{
     border-top: 3px solid #8c9cac;
     border-left: 3px solid #8c9cac;
     border-right: 3px solid #8c9cac;
     border-bottom: 1px dashed #8c9cac;
     border-radius: 24px 24px 0px 0px;
 }
-#border2{
+.border2{
     border-bottom: 3px solid #8c9cac;
     border-left: 3px solid #8c9cac;
     border-right: 3px solid #8c9cac;
@@ -506,7 +507,7 @@ label[for="name"], label[for="email"], label[for="phone"], label[for="location2"
     font-weight: bolder;
     cursor: pointer;
 }
-
+/*
 #preferences-btn-container{
     opacity: 0;
     transition: opacity 1s ease-in-out;
@@ -567,6 +568,7 @@ label[for="name"], label[for="email"], label[for="phone"], label[for="location2"
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
+*/
 /*MAIN CONTENT BLOCK END*/
 /*PHONE VERSION  (DEFAULT STYLE) END*/
 
@@ -574,6 +576,25 @@ label[for="name"], label[for="email"], label[for="phone"], label[for="location2"
 
 
 
+
+
+
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+/*
 #preferences-btn-container{
     grid-area: preferences-btn-container;
 }
@@ -616,6 +637,43 @@ label[for="name"], label[for="email"], label[for="phone"], label[for="location2"
 #containerx7{
     grid-area: containerx7;
 }
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#city1, #city2, #city3{
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
