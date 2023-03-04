@@ -104,17 +104,17 @@ menuButton.addEventListener('click', function(event){
     }
     // Date and time depending on Language and Event Location
     const txt19 = document.getElementById('text19');
-    var TimeTorontoEnglish = "<span>" + "April 23rd, 2023" + "<br>" + "09:30 AM" + "</span>" ;
-    var TimeTorontoFrench  = "<span>" + "Samedi, 23 avril 2023" + "<br>" + "09h30" + "</span>";
-    var TimeTorontoSpanish = "<span>" + "Sábado, 23 de abril de 2023" + "<br>" + "9:30 AM" + "</span>";
-    if (language === 'english' && location === 'Toronto'){
-        txt19.innerHTML = TimeTorontoEnglish;
+    var TimeNorthYorkEnglish = "<span>" + "April 23rd, 2023" + "<br>" + "09:00 PM" + "</span>" ;
+    var TimeNorthYorkFrench  = "<span>" + "Samedi, 23 avril 2023" + "<br>" + "09h30" + "</span>";
+    var TimeNorthYorkSpanish = "<span>" + "Sábado, 23 de abril de 2023" + "<br>" + "9:30 AM" + "</span>";
+    if (language === 'english' && location === 'North York'){
+        txt19.innerHTML = TimeNorthYorkEnglish;
     }
-    if (language === 'french' && location === 'Toronto'){
-        txt19.innerHTML = TimeTorontoFrench;
+    if (language === 'french' && location === 'North York'){
+        txt19.innerHTML = TimeNorthYorkFrench;
     }
-    if (language === 'spanish' && location === 'Toronto'){
-        txt19.innerHTML = TimeTorontoSpanish;
+    if (language === 'spanish' && location === 'North York'){
+        txt19.innerHTML = TimeNorthYorkSpanish;
     }
     var TimeCalgaryEnglish = "<span>" + "April 24th, 2023" + "<br>" + "09:30 AM" + "</span>" ;
     var TimeCalgaryFrench  = "<span>" + "Samedi, 24 avril 2023" + "<br>" + "09h30" + "</span>";
@@ -128,9 +128,9 @@ menuButton.addEventListener('click', function(event){
     if (language === 'spanish' && location === 'Calgary'){
         txt19.innerHTML = TimeCalgarySpanish;
     }
-    var TimeMontrealEnglish = "<span>" + "April 25th, 2023" + "<br>" + "09:30 AM" + "</span>" ;
-    var TimeMontrealFrench  = "<span>" + "Samedi, 25 avril 2023" + "<br>" + "09h30" + "</span>";
-    var TimeMontrealSpanish = "<span>" + "Sábado, 25 de abril de 2023" + "<br>" + "9:30 AM" + "</span>";
+    var TimeMontrealEnglish = "<span>" + "Wednesday, April 19th, 2023" + "<br>" + "01:00 PM" + "</span>" ;  // Pending Validation
+    var TimeMontrealFrench  = "<span>" + "Mercredi 19 avril 2023" + "<br>" + "13h00" + "</span>";           // Pending Validation
+    var TimeMontrealSpanish = "<span>" + "Miércoles 19 de abril de 2023" + "<br>" + "01:00 PM" + "</span>"; // Pending Validation
     if (language === 'english' && location === 'Montreal'){
         txt19.innerHTML = TimeMontrealEnglish;
     }
@@ -140,9 +140,9 @@ menuButton.addEventListener('click', function(event){
     if (language === 'spanish' && location === 'Montreal'){
         txt19.innerHTML = TimeMontrealSpanish;
     }
-    var TimeOrangevilleEnglish = "<span>" + "April 26th, 2023" + "<br>" + "09:30 AM" + "</span>" ;
-    var TimeOrangevilleFrench  = "<span>" + "Samedi, 26 avril 2023" + "<br>" + "09h30" + "</span>";
-    var TimeOrangevilleSpanish = "<span>" + "Sábado, 26 de abril de 2023" + "<br>" + "9:30 AM" + "</span>";
+    var TimeOrangevilleEnglish = "<span>" + "April 26th, 2023" + "<br>" + "01:00 PM" + "</span>" ;           // Pending Date Only
+    var TimeOrangevilleFrench  = "<span>" + "Samedi, 26 avril 2023" + "<br>" + "13h00" + "</span>";          // Pending Date Only
+    var TimeOrangevilleSpanish = "<span>" + "Sábado, 26 de abril de 2023" + "<br>" + "01:00 PM" + "</span>"; // Pending Date Only
     if (language === 'english' && location === 'Orangeville'){
         txt19.innerHTML = TimeOrangevilleEnglish;
     }
@@ -153,13 +153,13 @@ menuButton.addEventListener('click', function(event){
         txt19.innerHTML = TimeOrangevilleSpanish;
     }
     // Show Event Location depending on which city the User Selected
-    var addressToronto     = "1000 Lawrence Ave W, North York, ON M6A 1C6, Canadá";
+    var addressNorthYork   = "1000 Lawrence Ave W, North York, ON M6A 1C6, Canadá";
     var addressCalgary     = "555 Saddledome Rise SE, Calgary, AB T2G 2W1, Canadá";
-    var addressMontreal    = "2500 Chem. de Polytechnique, Montréal, QC H3T 1J4, Canadá";
-    var addressOrangeville = "25 Mill St, Orangeville, ON L9W 2M2, Canadá";
+    var addressMontreal    = "Crew Collective and CAfe 360 Rue Saint-Jacques, G101Montréal, QC H2Y 1P5"; // Pending Validation
+    var addressOrangeville = "Rustik Local Bistro (519) 940-3108"; // Pending Validation
     const txt20 = document.getElementById('text20');
-    if (location === 'Toronto'){
-        txt20.textContent = addressToronto;
+    if (location === 'North York'){
+        txt20.textContent = addressNorthYork;
     }
     if (location === 'Calgary'){
         txt20.textContent = addressCalgary;
@@ -171,8 +171,6 @@ menuButton.addEventListener('click', function(event){
         txt20.textContent = addressOrangeville;
     }
 });
-
-
 
 
 
