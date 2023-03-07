@@ -369,6 +369,10 @@ label[for="name"], label[for="email"], label[for="phone"], label[for="location2"
     font-size: 14px;
     font-weight: 300;
 }
+#name:focus, #email:focus, #phone:focus{
+    background-color: #ffffff;
+    border: 3px solid #8c9cac;
+}
 #registration-submit{
     display: block;
     height: 33px;
