@@ -660,6 +660,11 @@ label[for="name"], label[for="email"], label[for="phone"], label[for="location2"
     #registration-submit{
         width: 50%;
     }
+    #containerx8{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     /*MAIN CONTENT BLOCK END*/
 }
 /*COMPUTER VERSION (ONLY CHANGES REQUIRED FOR BIGGER SCREEN) END*/
