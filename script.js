@@ -69,6 +69,14 @@ menuButton.addEventListener('click', function(event){
             mainContentSpanish.remove();
             body.appendChild(menu);
         });
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxflFT8VhssRLb_lWTTlkp8Icvc_r2ydp5XPoUsKM9GSk2NNB0wcQje2INFKRYvFAv4/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        form.addEventListener('submit', e => {
+          e.preventDefault();
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        });
     }
     if (language === 'french'){
         mainContentEnglish.remove();
@@ -85,6 +93,14 @@ menuButton.addEventListener('click', function(event){
             mainContentSpanish.remove();
             body.appendChild(menu);
         });
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxflFT8VhssRLb_lWTTlkp8Icvc_r2ydp5XPoUsKM9GSk2NNB0wcQje2INFKRYvFAv4/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        form.addEventListener('submit', e => {
+          e.preventDefault();
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        });
     }
     if (language === 'spanish'){
         mainContentEnglish.remove();
@@ -100,6 +116,14 @@ menuButton.addEventListener('click', function(event){
             mainContentFrench.remove();
             mainContentSpanish.remove();
             body.appendChild(menu);
+        });
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxflFT8VhssRLb_lWTTlkp8Icvc_r2ydp5XPoUsKM9GSk2NNB0wcQje2INFKRYvFAv4/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        form.addEventListener('submit', e => {
+          e.preventDefault();
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
         });
     }
     // Date and time depending on Language and Event Location
