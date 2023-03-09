@@ -8,15 +8,12 @@ const mainContentFrench  = document.getElementById('main-content-french');
 const mainContentSpanish = document.getElementById('main-content-spanish');
 
 // MENU ELEMENTS
+const m1             = document.getElementById('menu-logo');
 const labelLanguage  = document.querySelector('label[for="language"]');
 const languageSelect = document.getElementById('language');
-
 const labelLocation  = document.querySelector('label[for="location"]');
 const locationSelect = document.getElementById('location');
-
 const menuButton     = document.getElementById('menu-submit');
-
-
 
 // INITIAL LOAD (ONLY SHOW MENU)
 window.onload = function() {
@@ -25,6 +22,26 @@ window.onload = function() {
     mainContentFrench.remove();
     mainContentSpanish.remove();
     body.appendChild(menu);
+    // -------------------------
+    setTimeout(() => {
+        m1.style.opacity = 1;
+    }, 1000);
+    setTimeout(() => {
+        labelLanguage.style.opacity = 1;
+    }, 1100);
+    setTimeout(() => {
+        languageSelect.style.opacity = 1;
+    }, 1200);
+    setTimeout(() => {
+        labelLocation.style.opacity = 1;
+    }, 1300);
+    setTimeout(() => {
+        locationSelect.style.opacity = 1;
+    }, 1400);
+    setTimeout(() => {
+        menuButton.style.opacity = 1;
+    }, 1500);
+    // -------------------------
 }
 
 // LANGUAGE CHANGE MENU DINAMICALLY
@@ -60,6 +77,58 @@ menuButton.addEventListener('click', function(event){
         body.appendChild(mainContentEnglish);
         const txt1       = document.getElementById('text1');
         txt1.textContent = `Welcome to Our ${location} Event`;
+        // MAIN CONTENT ELEMENTS
+        const mc1 = document.getElementById('preferences-btn-container');
+        const mc2 = document.getElementById('logo-container');
+        const mc3 = document.getElementById('containerx0');
+        const mc4 = document.getElementById('containerx2');
+        const mc5 = document.getElementById('containerx3');
+        const mc6 = document.getElementById('containerx4');
+        const mc7 = document.getElementById('containerx6');
+        const mc8 = document.getElementById('containerx7');
+        const mc9 = document.getElementById('containerx8');
+        const mc10 = document.getElementById('containerx9');
+        mc1.style.opacity  = 0;
+        mc2.style.opacity  = 0;
+        mc3.style.opacity  = 0;
+        mc4.style.opacity  = 0;
+        mc5.style.opacity  = 0;
+        mc6.style.opacity  = 0;
+        mc7.style.opacity  = 0;
+        mc8.style.opacity  = 0;
+        mc9.style.opacity  = 0;
+        mc10.style.opacity = 0;
+        setTimeout(() => {
+            mc1.style.opacity = 1;
+        }, 1000);
+        setTimeout(() => {
+            mc2.style.opacity = 1;
+        }, 1100);
+        setTimeout(() => {
+            mc3.style.opacity = 1;
+        }, 1200);
+        setTimeout(() => {
+            mc4.style.opacity = 1;
+        }, 1300);
+        setTimeout(() => {
+            mc5.style.opacity = 1;
+        }, 1400);
+        setTimeout(() => {
+            mc6.style.opacity = 1;
+        }, 1500);
+        setTimeout(() => {
+            mc7.style.opacity = 1;
+        }, 1600);
+        setTimeout(() => {
+            mc8.style.opacity = 1;
+        }, 1700);
+        setTimeout(() => {
+            mc9.style.opacity = 1;
+        }, 1800);
+        setTimeout(() => {
+            mc10.style.opacity = 1;
+        }, 1900);
+        // ----------------------
         const changeButton = document.getElementById('preferences-btn');
         changeButton.addEventListener('click', function(event){
             event.preventDefault();
@@ -68,6 +137,33 @@ menuButton.addEventListener('click', function(event){
             mainContentFrench.remove();
             mainContentSpanish.remove();
             body.appendChild(menu);
+            // -------------------------
+            m1.style.opacity             = 0;
+            labelLanguage.style.opacity  = 0;
+            languageSelect.style.opacity = 0;
+            labelLocation.style.opacity  = 0;
+            locationSelect.style.opacity = 0;
+            menuButton.style.opacity     = 0;
+            // -------------------------
+            setTimeout(() => {
+                m1.style.opacity = 1;
+            }, 1000);
+            setTimeout(() => {
+                labelLanguage.style.opacity = 1;
+            }, 1100);
+            setTimeout(() => {
+                languageSelect.style.opacity = 1;
+            }, 1200);
+            setTimeout(() => {
+                labelLocation.style.opacity = 1;
+            }, 1300);
+            setTimeout(() => {
+                locationSelect.style.opacity = 1;
+            }, 1400);
+            setTimeout(() => {
+                menuButton.style.opacity = 1;
+            }, 1500);
+            // -------------------------
         });
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxflFT8VhssRLb_lWTTlkp8Icvc_r2ydp5XPoUsKM9GSk2NNB0wcQje2INFKRYvFAv4/exec';
         const form = document.forms['submit-to-google-sheet'];
@@ -88,6 +184,58 @@ menuButton.addEventListener('click', function(event){
         body.appendChild(mainContentFrench);
         const txt1       = document.getElementById('text1');
         txt1.textContent = `Bienvenue à notre événement de présentation à ${location}`;
+        // MAIN CONTENT ELEMENTS
+        const mc1 = document.getElementById('preferences-btn-container');
+        const mc2 = document.getElementById('logo-container');
+        const mc3 = document.getElementById('containerx0');
+        const mc4 = document.getElementById('containerx2');
+        const mc5 = document.getElementById('containerx3');
+        const mc6 = document.getElementById('containerx4');
+        const mc7 = document.getElementById('containerx6');
+        const mc8 = document.getElementById('containerx7');
+        const mc9 = document.getElementById('containerx8');
+        const mc10 = document.getElementById('containerx9');
+        mc1.style.opacity  = 0;
+        mc2.style.opacity  = 0;
+        mc3.style.opacity  = 0;
+        mc4.style.opacity  = 0;
+        mc5.style.opacity  = 0;
+        mc6.style.opacity  = 0;
+        mc7.style.opacity  = 0;
+        mc8.style.opacity  = 0;
+        mc9.style.opacity  = 0;
+        mc10.style.opacity = 0;
+        setTimeout(() => {
+            mc1.style.opacity = 1;
+        }, 1000);
+        setTimeout(() => {
+            mc2.style.opacity = 1;
+        }, 1100);
+        setTimeout(() => {
+            mc3.style.opacity = 1;
+        }, 1200);
+        setTimeout(() => {
+            mc4.style.opacity = 1;
+        }, 1300);
+        setTimeout(() => {
+            mc5.style.opacity = 1;
+        }, 1400);
+        setTimeout(() => {
+            mc6.style.opacity = 1;
+        }, 1500);
+        setTimeout(() => {
+            mc7.style.opacity = 1;
+        }, 1600);
+        setTimeout(() => {
+            mc8.style.opacity = 1;
+        }, 1700);
+        setTimeout(() => {
+            mc9.style.opacity = 1;
+        }, 1800);
+        setTimeout(() => {
+            mc10.style.opacity = 1;
+        }, 1900);
+        // ----------------------
         const changeButton = document.getElementById('preferences-btn');
         changeButton.addEventListener('click', function(event){
             event.preventDefault();
@@ -96,6 +244,33 @@ menuButton.addEventListener('click', function(event){
             mainContentFrench.remove();
             mainContentSpanish.remove();
             body.appendChild(menu);
+            // -------------------------
+            m1.style.opacity             = 0;
+            labelLanguage.style.opacity  = 0;
+            languageSelect.style.opacity = 0;
+            labelLocation.style.opacity  = 0;
+            locationSelect.style.opacity = 0;
+            menuButton.style.opacity     = 0;
+            // -------------------------
+            setTimeout(() => {
+                m1.style.opacity = 1;
+            }, 1000);
+            setTimeout(() => {
+                labelLanguage.style.opacity = 1;
+            }, 1100);
+            setTimeout(() => {
+                languageSelect.style.opacity = 1;
+            }, 1200);
+            setTimeout(() => {
+                labelLocation.style.opacity = 1;
+            }, 1300);
+            setTimeout(() => {
+                locationSelect.style.opacity = 1;
+            }, 1400);
+            setTimeout(() => {
+                menuButton.style.opacity = 1;
+            }, 1500);
+            // -------------------------
         });
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxflFT8VhssRLb_lWTTlkp8Icvc_r2ydp5XPoUsKM9GSk2NNB0wcQje2INFKRYvFAv4/exec';
         const form = document.forms['submit-to-google-sheet'];
@@ -116,6 +291,58 @@ menuButton.addEventListener('click', function(event){
         body.appendChild(mainContentSpanish);
         const txt1       = document.getElementById('text1');
         txt1.textContent = `Bienvenido(a) a Nuestro Evento de Presentación en ${location}`;
+        // MAIN CONTENT ELEMENTS
+        const mc1 = document.getElementById('preferences-btn-container');
+        const mc2 = document.getElementById('logo-container');
+        const mc3 = document.getElementById('containerx0');
+        const mc4 = document.getElementById('containerx2');
+        const mc5 = document.getElementById('containerx3');
+        const mc6 = document.getElementById('containerx4');
+        const mc7 = document.getElementById('containerx6');
+        const mc8 = document.getElementById('containerx7');
+        const mc9 = document.getElementById('containerx8');
+        const mc10 = document.getElementById('containerx9');
+        mc1.style.opacity  = 0;
+        mc2.style.opacity  = 0;
+        mc3.style.opacity  = 0;
+        mc4.style.opacity  = 0;
+        mc5.style.opacity  = 0;
+        mc6.style.opacity  = 0;
+        mc7.style.opacity  = 0;
+        mc8.style.opacity  = 0;
+        mc9.style.opacity  = 0;
+        mc10.style.opacity = 0;
+        setTimeout(() => {
+            mc1.style.opacity = 1;
+        }, 1000);
+        setTimeout(() => {
+            mc2.style.opacity = 1;
+        }, 1100);
+        setTimeout(() => {
+            mc3.style.opacity = 1;
+        }, 1200);
+        setTimeout(() => {
+            mc4.style.opacity = 1;
+        }, 1300);
+        setTimeout(() => {
+            mc5.style.opacity = 1;
+        }, 1400);
+        setTimeout(() => {
+            mc6.style.opacity = 1;
+        }, 1500);
+        setTimeout(() => {
+            mc7.style.opacity = 1;
+        }, 1600);
+        setTimeout(() => {
+            mc8.style.opacity = 1;
+        }, 1700);
+        setTimeout(() => {
+            mc9.style.opacity = 1;
+        }, 1800);
+        setTimeout(() => {
+            mc10.style.opacity = 1;
+        }, 1900);
+        // ----------------------
         const changeButton = document.getElementById('preferences-btn');
         changeButton.addEventListener('click', function(event){
             event.preventDefault();
@@ -124,6 +351,33 @@ menuButton.addEventListener('click', function(event){
             mainContentFrench.remove();
             mainContentSpanish.remove();
             body.appendChild(menu);
+            // -------------------------
+            m1.style.opacity             = 0;
+            labelLanguage.style.opacity  = 0;
+            languageSelect.style.opacity = 0;
+            labelLocation.style.opacity  = 0;
+            locationSelect.style.opacity = 0;
+            menuButton.style.opacity     = 0;
+            // -------------------------
+            setTimeout(() => {
+                m1.style.opacity = 1;
+            }, 1000);
+            setTimeout(() => {
+                labelLanguage.style.opacity = 1;
+            }, 1100);
+            setTimeout(() => {
+                languageSelect.style.opacity = 1;
+            }, 1200);
+            setTimeout(() => {
+                labelLocation.style.opacity = 1;
+            }, 1300);
+            setTimeout(() => {
+                locationSelect.style.opacity = 1;
+            }, 1400);
+            setTimeout(() => {
+                menuButton.style.opacity = 1;
+            }, 1500);
+            // -------------------------
         });
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxflFT8VhssRLb_lWTTlkp8Icvc_r2ydp5XPoUsKM9GSk2NNB0wcQje2INFKRYvFAv4/exec';
         const form = document.forms['submit-to-google-sheet'];
@@ -189,10 +443,10 @@ menuButton.addEventListener('click', function(event){
         txt19.innerHTML = TimeOrangevilleSpanish;
     }
     // Show Event Location depending on which city the User Selected
-    var addressNorthYork   = "1000 Lawrence Ave W, North York, ON M6A 1C6, Canadá";
+    var addressNorthYork   = "Domenica DiLuca Community Rec Centre Stanley Park 25 - Stanley Rd. North York"; // Pending Validation
     var addressCalgary     = "555 Saddledome Rise SE, Calgary, AB T2G 2W1, Canadá";
-    var addressMontreal    = "Crew Collective and CAfe 360 Rue Saint-Jacques, G101Montréal, QC H2Y 1P5"; // Pending Validation
-    var addressOrangeville = "Rustik Local Bistro (519) 940-3108"; // Pending Validation
+    var addressMontreal    = "Crew Collective and CAfe 360 Rue Saint-Jacques, G101 Montréal, QC H2Y 1P5";     // Pending Validation
+    var addressOrangeville = "Rustik Local Bistro (519) 940-3108";                                            // Pending Validation
     const txt20 = document.getElementById('text20');
     if (location === 'North York'){
         txt20.textContent = addressNorthYork;
