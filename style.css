@@ -55,6 +55,8 @@ body{
     width: 305px;
     position: relative;
     z-index: 10;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 #menu-form{
     width: 100%;
@@ -78,6 +80,8 @@ label[for="language"], label[for="location"]{
     font-size: 16px;
     font-weight: 500;
     text-align: center;
+    opacity: 0;
+    transition: opacity 1.3s ease-in-out;
 }
 #language, #location{
     display: block;
@@ -89,6 +93,8 @@ label[for="language"], label[for="location"]{
     border-radius: 6px;
     font-size: 14px;
     font-weight: 300;
+    opacity: 0;
+    transition: opacity 1.3s ease-in-out;
 }
 #language option, #location option{
     background-color: #444444;
@@ -107,6 +113,8 @@ label[for="language"], label[for="location"]{
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
+    opacity: 0;
+    transition: opacity 1.3s ease-in-out;
 }
 /*MENU BLOCK END*/
 
@@ -118,6 +126,8 @@ label[for="language"], label[for="location"]{
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 #preferences-btn{
     display: block;
@@ -141,6 +151,8 @@ label[for="language"], label[for="location"]{
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 #main-logo{
     width: 315px;
@@ -157,6 +169,8 @@ label[for="language"], label[for="location"]{
     font-family: 'Jost', sans-serif;
     background-color: #ffffff;
     border-radius: 0px 0px 0px 0px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 #containerx0 h2{
     text-align: center;
@@ -189,6 +203,8 @@ label[for="language"], label[for="location"]{
     background-color: #ef8b8b;
     border-radius: 0px;
     padding-top: 30px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 #containerx2 img{
     width: 100%;
@@ -206,6 +222,8 @@ label[for="language"], label[for="location"]{
     width: 100%;
     font-family: 'Jost', sans-serif;
     background-color: #ef8b8b;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 #containerx3 h2{
     text-align: center;
@@ -242,6 +260,8 @@ label[for="language"], label[for="location"]{
     width: 100%;
     font-family: 'Jost', sans-serif;
     background: linear-gradient(to bottom, #ef8b8b 50%, #8c9cac 50%);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 #containerx4 img{
     width: 100%;
@@ -260,6 +280,8 @@ label[for="language"], label[for="location"]{
     width: 100%;
     font-family: 'Jost', sans-serif;
     background-color: #8c9cac;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 #containerx6 h2{
     text-align: center;
@@ -275,6 +297,8 @@ label[for="language"], label[for="location"]{
     width: 100%;
     font-family: 'Jost', sans-serif;
     background-color: #8c9cac;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 #containerx7 img{
     width: 100%;
@@ -299,6 +323,8 @@ label[for="language"], label[for="location"]{
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: #ffffff;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 #containerx8 h2{
     width: 90%;
@@ -396,6 +422,8 @@ label[for="name"], label[for="email"], label[for="phone"], label[for="city"]{
     width: 100%;
     font-family: 'Jost', sans-serif;
     background-color: #333333;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
     /*margin-top: 15px;*/
 }
 #containerx9 p{
